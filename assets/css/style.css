@@ -374,7 +374,7 @@ body.active { overflow: hidden; }
 .nav-toggle-btn.active { transform: rotate(-45deg); }
 
 .nav-toggle-btn span {
-  width: 20px;
+  width: 30px;
   height: 2px;
   background: var(--color-primary);
   margin: 5px;
@@ -483,9 +483,17 @@ main { overflow-x: hidden; }
 .hero-content { max-width: 450px; }
 
 .hero-title {
-  text-align: center;
+  display: flex; /* Mengatur elemen dalam satu baris */
+  align-items: center; /* Menyelaraskan secara vertikal */
+  justify-content: center; /* Menyelaraskan secara horizontal */
   margin-bottom: 30px;
+  gap: 10px; /* Jarak antar elemen */
+  text-align: center; /* Untuk elemen teks jika ada */
+  color: var(--color-primary);
+  font-family: var(--ff-poppins);
+  line-height: 1.2;
 }
+
 
 .hero .btn-primary { margin-inline: auto; }
 
@@ -546,6 +554,13 @@ main { overflow-x: hidden; }
 }
 
 .stats-card > ion-icon { color: var(--color-secondary); }
+
+.card-icon img {
+  width: 50px; /* Ukuran sedikit lebih besar */
+  height: 50px;
+  object-fit: contain; /* Menjaga proporsi gambar */
+}
+
 
 
 
@@ -1120,18 +1135,18 @@ textarea.input-field {
     height: 100vh;
   }
 
+  .hero-banner img {
+    max-width: 100%; /* Mengatur lebar maksimal sesuai container */
+    height: auto; /* Mempertahankan aspek rasio gambar */
+    display: block; /* Menghilangkan ruang kosong di bawah gambar */
+    margin: 0 auto; /* Menengahkan gambar dalam container */
+  }
+  
   .hero-banner {
-    max-width: unset;
-    height: 100%;
-    margin-bottom: 0;
+    max-width: 600px; /* Batasi lebar maksimal banner */
+    margin: 0 auto; /* Posisikan di tengah container */
   }
-
-  .hero img {
-    height: 100%;
-    width: auto;
-    margin-inline: auto;
-  }
-
+  
   .hero-content {
     --color-primary: var(--white);
 
@@ -1335,4 +1350,59 @@ textarea.input-field {
 
   .about-banner { max-width: 450px; }
 
+}
+
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.project-detail {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-banner img {
+  width: 100%;
+}
+
+.card-content h1 {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+.publish-date {
+  font-size: 14px;
+  color: gray;
+}
+
+.project-description {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-top: 20px;
+}
+
+/* Kelas khusus untuk ukuran logo */
+.logo-size {
+  max-width: 100px; /* Ukuran maksimal logo */
+  height: auto; /* Memastikan rasio aspek tetap */
+  display: block; /* Menyusun logo dengan baik */
 }
