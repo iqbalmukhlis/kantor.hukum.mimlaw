@@ -1406,3 +1406,10 @@ nav a {
   height: auto; /* Memastikan rasio aspek tetap */
   display: block; /* Menyusun logo dengan baik */
 }
+
+.btn-center {
+  display: flex; /* Gunakan Flexbox */
+  justify-content: center; /* Pusatkan konten secara horizontal */
+  align-items: center; /* Pusatkan konten secara vertikal */
+  text-align: center; /* Pastikan teks terpusat */
+}
