@@ -625,7 +625,7 @@ main { overflow-x: hidden; }
 
 .skills-toggle.active::before {
   left: 98px;
-  width: 94px;
+  width: 117px;
 }
 
 .toggle-btn {
